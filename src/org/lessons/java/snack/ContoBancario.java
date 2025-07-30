@@ -2,8 +2,8 @@ package org.lessons.java.snack;
 
 public class ContoBancario {
 
-    private static int numeroConto;
-    private static float saldo;
+    private int numeroConto;
+    private float saldo;
 
 
     public ContoBancario(int numeroConto){
@@ -11,22 +11,26 @@ public class ContoBancario {
         this.saldo = 0;
     }
 
-
-    public static void setDeposito(float denaro){
-       ContoBancario.saldo += denaro;
+    public int getNumeroConto(){
+        return this.numeroConto = numeroConto;
     }
 
-    public static void setPrelievo(float denaro){
+
+    public void setDeposito(float denaro){
+       this.saldo += denaro;
+    }
+
+    public void setPrelievo(float denaro){
         if(saldo > denaro){
-            ContoBancario.saldo -= denaro;
+            this.saldo -= denaro;
         } else{
             System.out.println("Saldo insufficiente");
         }
     }
 
-    public static float getSaldo(){
+    public float getSaldo(){
 
-        return ContoBancario.saldo = saldo;
+        return this.saldo = saldo;
     }
 
 

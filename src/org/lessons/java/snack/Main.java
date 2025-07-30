@@ -7,21 +7,20 @@ public class Main {
 
         System.out.println(studente1.datiStudente());
 
-        System.out.println(ContoBancario.getSaldo());
+        ContoBancario conto1 = new ContoBancario(22333344);
 
-        ContoBancario.setDeposito(345.75f);
+        System.out.println(conto1.getSaldo());
 
+        conto1.setDeposito(100.50f);
+        
+        System.out.println(conto1.getSaldo());
 
-        System.out.println(ContoBancario.getSaldo());
+        conto1.setPrelievo(50);
 
-        ContoBancario.setPrelievo(45);
+        System.out.println(conto1.getSaldo());
 
-        ContoBancario.setPrelievo(300.74f);
-
-        System.out.println(ContoBancario.getSaldo());
-
-
-
+    System.out.println(conto1.getNumeroConto());
+        
 
     }
     
