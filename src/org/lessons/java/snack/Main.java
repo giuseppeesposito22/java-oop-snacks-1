@@ -7,6 +7,19 @@ public class Main {
 
         System.out.println(studente1.datiStudente());
 
+        System.out.println(ContoBancario.getSaldo());
+
+        ContoBancario.setDeposito(345.75f);
+
+
+        System.out.println(ContoBancario.getSaldo());
+
+        ContoBancario.setPrelievo(45);
+
+        ContoBancario.setPrelievo(300.74f);
+
+        System.out.println(ContoBancario.getSaldo());
+
 
 
 
