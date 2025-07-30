@@ -5,6 +5,20 @@ public class RegistroStudenti {
 
     private Studente[] arrayStudenti;
 
+    
+    public Studente[] getArrayStudenti() {
+        return arrayStudenti;
+    }
+
+
+    public void setArrayStudenti(Studente[] arrayStudenti) {
+        this.arrayStudenti = arrayStudenti;
+    }
+    
+
+
+    
+
     public RegistroStudenti(){
         this.arrayStudenti = new Studente[0];
     }
@@ -31,7 +45,8 @@ public class RegistroStudenti {
             System.out.println(arrayStudenti[i]);
         }
     }
-    
+
+
     
 
 

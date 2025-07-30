@@ -26,6 +26,8 @@ public class Main {
 
         RegistroStudenti registro1 = new RegistroStudenti();
 
+    
+
        registro1.addStudente(studente1);
        registro1.addStudente(studente2);
 
