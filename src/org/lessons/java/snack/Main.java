@@ -7,7 +7,7 @@ public class Main {
         Studente studente2 = new Studente("Luigi", "Verdi", 20);
 
 
-        System.out.println(studente1.toString());
+        System.out.println(studente1.datiStudente());
 
         ContoBancario conto1 = new ContoBancario(22333344);
 

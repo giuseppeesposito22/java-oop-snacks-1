@@ -15,7 +15,13 @@ public class Studente {
     
 
     @Override
-       public String toString(){
+    public String toString() {
+        return  nome + " " + cognome + ", " + eta + " anni";
+    }
+
+
+
+    public String datiStudente(){
         return(nome + " " + cognome + ", " + eta + " anni");
     }
 

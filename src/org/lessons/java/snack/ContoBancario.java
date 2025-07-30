@@ -17,11 +17,13 @@ public class ContoBancario {
 
 
     public void setDeposito(float denaro){
-       this.saldo += denaro;
+        if(denaro > 0){
+            this.saldo += denaro;
+        }
     }
 
     public void setPrelievo(float denaro){
-        if(saldo > denaro){
+        if(denaro > 0 && saldo > denaro){
             this.saldo -= denaro;
         } else{
             System.out.println("Saldo insufficiente");
