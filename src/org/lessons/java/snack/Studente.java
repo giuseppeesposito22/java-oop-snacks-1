@@ -12,7 +12,10 @@ public class Studente {
         this.eta = eta;
     }
 
-    public String datiStudente(){
+    
+
+    @Override
+       public String toString(){
         return(nome + " " + cognome + ", " + eta + " anni");
     }
 
